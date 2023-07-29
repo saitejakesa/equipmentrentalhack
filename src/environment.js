@@ -1,6 +1,6 @@
 const env = {
     apiurl: "https://equipmentrentalbeta.onrender.com",
-    frontendurl:"http://localhost:3000"
+    frontendurl:"https://equipmentrental.netlify.app"
 }
 
 export default env
