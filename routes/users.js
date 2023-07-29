@@ -14,6 +14,7 @@ const {
   equipementModel2,
   orderModel,
   checkoutModel,
+  info
 } = require("../dbproductschema");
 const generator = require("./createUniqueRandomId").createUniqueRandomId;
 const { differenceInDays } = require("date-fns");
@@ -139,6 +140,32 @@ router.post("/productadd", async (req, res) => {
     res.send({
       statusCode: 200,
       message: "Product Added Sucessfully",
+    });
+  } catch (error) {
+    console.log(error);
+    res.send({ statusCode: 400, message: "Internal Server Error", error });
+  }
+});
+router.post("/productinfo", async (req, res) => {
+  try {
+    let products = await info.create(req.body);
+
+    res.send({
+      statusCode: 200,
+      message: "Will Provide Information About Product",
+    });
+  } catch (error) {
+    console.log(error);
+    res.send({ statusCode: 400, message: "Internal Server Error", error });
+  }
+});
+router.post("/address", async (req, res) => {
+  try {
+    let products = await address.create(req.body);
+
+    res.send({
+      statusCode: 200,
+      message: "Will Provide Information About Product",
     });
   } catch (error) {
     console.log(error);
