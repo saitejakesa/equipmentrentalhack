@@ -1,0 +1,6 @@
+@media (min-width: 600px) {
+    .fullcart{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,71 @@
+.FullInfo{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    flex: 100%;
+    background-image: linear-gradient(to right, rgb(0, 17, 255) , rgb(132, 0, 255))
+}
+.contactinfo{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.dpname{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1px;
+}
+
+.cname{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 1px; 
+}
+/* .cname h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+} */
+.smail{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 1px;  
+}
+
+.tollno{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+.Productform{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+    flex: 50%;
+}
+.submit{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.type{
+    display: flex;  
+}
+.name{
+    display: flex;
+}
+.description{
+    display: flex;
+}
+.information{
+    display: flex;
+}
